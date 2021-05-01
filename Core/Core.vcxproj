@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45EC0415-228A-4953-9DB5-DE45C31799CD}</ProjectGuid>
+    <RootNamespace>Core</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)_x64</TargetName>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)_x64</TargetName>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)_x32</TargetName>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\$(Configuration)\</IntDir>
+    <GenerateManifest>true</GenerateManifest>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)_x32</TargetName>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>false</OmitFramePointers>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>_USING_V110_SDK71_;_CRT_SECURE_NO_WARNINGS;_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;source;source/Render;../plugins/FBX/include</AdditionalIncludeDirectories>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <MinimalRebuild>true</MinimalRebuild>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <FloatingPointExceptions>
+      </FloatingPointExceptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <SubSystem>Windows</SubSystem>
+      <TurnOffAssemblyGeneration>false</TurnOffAssemblyGeneration>
+      <LinkStatus>
+      </LinkStatus>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>false</OmitFramePointers>
+      <PreprocessorDefinitions>_USING_V110_SDK71_;_CRT_SECURE_NO_WARNINGS;_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;source;source/Render;../plugins/FBX/include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <MinimalRebuild>true</MinimalRebuild>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <FloatingPointExceptions>
+      </FloatingPointExceptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <MinimumRequiredVersion>
+      </MinimumRequiredVersion>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
+      <LinkStatus>
+      </LinkStatus>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>/time+ </AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DLL_;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;source;source/Render;../plugins/FBX/include</AdditionalIncludeDirectories>
+      <AssemblerOutput>AssemblyCode</AssemblerOutput>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <SubSystem>Windows</SubSystem>
+      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
+      <LinkStatus>
+      </LinkStatus>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DLL_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;source;source/Render;../plugins/FBX/include</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AssemblerOutput>All</AssemblerOutput>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+      <MinimumRequiredVersion>
+      </MinimumRequiredVersion>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <TurnOffAssemblyGeneration>true</TurnOffAssemblyGeneration>
+      <LinkStatus>
+      </LinkStatus>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\App\App.cpp" />
+    <ClCompile Include="source\Math\Bound.cpp" />
+    <ClCompile Include="source\Math\Cubic.cpp" />
+    <ClCompile Include="source\Math\Maths.cpp" />
+    <ClCompile Include="source\Math\ray.cpp" />
+    <ClCompile Include="source\Plugins.cpp" />
+    <ClCompile Include="source\Render\GLMaterial.cpp" />
+    <ClCompile Include="source\Render\GLTexture.cpp" />
+    <ClCompile Include="source\Render\GLWrapper.cpp" />
+    <ClCompile Include="source\Render\GLRender.cpp" />
+    <ClCompile Include="source\Render\GLShader.cpp" />
+    <ClCompile Include="source\Render\GLExt.cpp" />
+    <ClCompile Include="source\Render\GLFFP.cpp" />
+    <ClCompile Include="source\Scene\Camera.cpp" />
+    <ClCompile Include="source\Scene\EditSVG.cpp" />
+    <ClCompile Include="source\Scene\Gizmo.cpp" />
+    <ClCompile Include="source\Scene\Mesh.cpp" />
+    <ClCompile Include="source\Scene\Model.cpp" />
+    <ClCompile Include="source\Scene\Node.cpp" />
+    <ClCompile Include="source\Scene\Scene.cpp" />
+    <ClCompile Include="source\Scene\SkelAnim.cpp" />
+    <ClCompile Include="source\Scene\Skeleton.cpp" />
+    <ClCompile Include="source\Scene\svg.cpp" />
+    <ClCompile Include="source\Script\Script.cpp" />
+    <ClCompile Include="source\Sys\GlyphMap.cpp" />
+    <ClCompile Include="source\Sys\Profiler.cpp" />
+    <ClCompile Include="source\Sys\Socket.cpp" />
+    <ClCompile Include="source\Sys\Thread.cpp" />
+    <ClCompile Include="source\Sys\Timer.cpp" />
+    <ClCompile Include="source\Sys\Log.cpp" />
+    <ClCompile Include="source\Sys\Str.cpp" />
+    <ClCompile Include="source\Core.cpp" />
+    <ClCompile Include="source\Sys\XML.cpp" />
+    <ClCompile Include="source\UI\Console.cpp" />
+    <ClCompile Include="source\UI\Graph.cpp" />
+    <ClCompile Include="source\UI\UI.cpp" />
+    <ClCompile Include="source\UI\UI_Panel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\App\App.h" />
+    <ClInclude Include="include\Math\Cubic.h" />
+    <ClInclude Include="include\Math\mat4.h" />
+    <ClInclude Include="include\Math\Maths.h" />
+    <ClInclude Include="include\Math\Origin.h" />
+    <ClInclude Include="include\Math\quat.h" />
+    <ClInclude Include="include\Math\vec2.h" />
+    <ClInclude Include="include\Math\vec3.h" />
+    <ClInclude Include="include\Math\vec4.h" />
+    <ClInclude Include="include\Plugins.h" />
+    <ClInclude Include="include\Render\GLWrapper.h" />
+    <ClInclude Include="include\Render\GLRender.h" />
+    <ClInclude Include="include\Render\GLExt.h" />
+    <ClInclude Include="include\Render\Material.h" />
+    <ClInclude Include="include\Render\Texture.h" />
+    <ClInclude Include="include\Render\Render.h" />
+    <ClInclude Include="include\Render\Shader.h" />
+    <ClInclude Include="include\Render\FFP.h" />
+    <ClInclude Include="include\Scene\Camera.h" />
+    <ClInclude Include="include\Scene\Gizmo.h" />
+    <ClInclude Include="include\Scene\Mesh.h" />
+    <ClInclude Include="include\Scene\Model.h" />
+    <ClInclude Include="include\Scene\Node.h" />
+    <ClInclude Include="include\Scene\Resource.h" />
+    <ClInclude Include="include\Scene\Scene.h" />
+    <ClInclude Include="include\Scene\SkelAnim.h" />
+    <ClInclude Include="include\Scene\Skeleton.h" />
+    <ClInclude Include="include\Scene\svg.h" />
+    <ClInclude Include="include\Script\Function.h" />
+    <ClInclude Include="include\Script\Script.h" />
+    <ClInclude Include="include\Script\Variable.h" />
+    <ClInclude Include="include\Sys\GlyphMap.h" />
+    <ClInclude Include="include\Sys\HashTable.h" />
+    <ClInclude Include="include\Sys\Buffer.h" />
+    <ClInclude Include="include\Sys\DLL_API.h" />
+    <ClInclude Include="include\Sys\Input.h" />
+    <ClInclude Include="include\Sys\Log.h" />
+    <ClInclude Include="include\Sys\Profiler.h" />
+    <ClInclude Include="include\Sys\Socket.h" />
+    <ClInclude Include="include\Sys\Str.h" />
+    <ClInclude Include="include\Sys\Thread.h" />
+    <ClInclude Include="include\Sys\Timer.h" />
+    <ClInclude Include="include\Sys\Tlist.h" />
+    <ClInclude Include="include\Sys\vector.h" />
+    <ClInclude Include="include\Sys\XML.h" />
+    <ClInclude Include="include\UI\Chat.h" />
+    <ClInclude Include="include\UI\Console.h" />
+    <ClInclude Include="include\UI\Graph.h" />
+    <ClInclude Include="include\UI\Icon.h" />
+    <ClInclude Include="include\UI\UI.h" />
+    <ClInclude Include="include\UI\UI_Panel.h" />
+    <ClInclude Include="include\Plugin.h" />
+    <ClInclude Include="include\BaseTypes.h" />
+    <ClInclude Include="include\Core.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

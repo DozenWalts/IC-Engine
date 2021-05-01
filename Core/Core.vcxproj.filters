@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{2c8302c1-43c7-4e6b-bf83-e89cd721c181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sys">
+      <UniqueIdentifier>{614fee60-b8de-4f8f-a75e-3b04b9787289}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{bca4502c-b631-4000-b134-5ee41b4bd17e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Script">
+      <UniqueIdentifier>{000e355d-b06f-4625-adde-86e364c6007b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{25208a17-ac01-470f-a85d-ccef73d62528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{f97908a8-1d02-4fe0-b893-f25d7a5e163f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{91d5a1bc-ba3b-4a0d-9b2a-aff01b424d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Render">
+      <UniqueIdentifier>{3367cc65-6a34-4c79-a381-be9392fcb56c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Sys">
+      <UniqueIdentifier>{e27edb57-6bf3-4aa1-9d5d-171dd2d75803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Script">
+      <UniqueIdentifier>{5f47a3eb-2945-4abe-a78a-978035e49c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{bddc79af-c384-45ce-a634-11d18c209fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{714730ac-bef7-4c57-8395-0fb93f511fa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{178b20ad-d9b6-4abb-bf03-57a89d603d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{fb54e851-3736-4b57-9965-602e10528355}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\App\App.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Script\Script.cpp">
+      <Filter>Source Files\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Render\GLShader.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Render\GLFFP.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Render\GLExt.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Render\GLRender.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Render\GLWrapper.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sys\Log.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sys\Profiler.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sys\Str.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sys\Thread.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sys\Timer.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Graph.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\UI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\Camera.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\Mesh.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\Model.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sys\GlyphMap.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Render\GLTexture.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sys\Socket.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\UI_Panel.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\Gizmo.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Math\Bound.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Math\ray.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Math\Maths.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Sys\XML.cpp">
+      <Filter>Source Files\Sys</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UI\Console.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\Node.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\svg.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\Scene.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Render\GLMaterial.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\EditSVG.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Plugins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Math\Cubic.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\Skeleton.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Scene\SkelAnim.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BaseTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\App\App.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\vec4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\mat4.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\quat.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\Maths.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\vec3.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\vec2.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\Origin.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script\Function.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script\Script.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Script\Variable.h">
+      <Filter>Header Files\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Buffer.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\DLL_API.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\HashTable.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Input.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Log.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Profiler.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Str.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Thread.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Timer.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Tlist.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\vector.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Render\Material.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Render\Render.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Render\Shader.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Render\Texture.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Render\GLExt.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Render\GLRender.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Render\GLWrapper.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Render\FFP.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\Console.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\UI.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\UI_Panel.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\Graph.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\Icon.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Camera.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Mesh.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Model.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Scene.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\GlyphMap.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Node.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Resource.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Plugins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\XML.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sys\Socket.h">
+      <Filter>Header Files\Sys</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Gizmo.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UI\Chat.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\svg.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Math\Cubic.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Skeleton.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\SkelAnim.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
