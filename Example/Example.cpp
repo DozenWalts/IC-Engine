@@ -27,6 +27,7 @@
 #include "Scene/svg.h"
 #include "Math/ray.h"
 
+
 struct Example final :App{
 	Graph GMS;
 	Chat chat;
